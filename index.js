@@ -1,4 +1,8 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable linebreak-style */
+
+import { luxon } from './modules/luxon.js'
+
 const bookTitle = document.querySelector('#book-title');
 const bookAuthor = document.querySelector('#book-author');
 const addBookBtn = document.querySelector('#add');
@@ -73,25 +77,3 @@ window.addEventListener('DOMContentLoaded', () => {
 
 document.getElementById('current-date').innerHTML = new Date().toLocaleString();
 
-// Display the right section
-/* eslint-disable no-unused-vars */
-
-function showBookList() {
-  document.getElementById('id1').style.display = 'block';
-  document.getElementById('addBook').style.display = 'none';
-  document.getElementById('contact').style.display = 'none';
-}
-
-function showForm() {
-  document.getElementById('id1').style.display = 'none';
-  document.getElementById('addBook').style.display = 'block';
-  document.getElementById('contact').style.display = 'none';
-}
-
-function showContact() {
-  document.getElementById('id1').style.display = 'none';
-  document.getElementById('addBook').style.display = 'none';
-  document.getElementById('contact').style.display = 'block';
-}
-
-document.addEventListener('DOMContentLoaded', showBookList);
